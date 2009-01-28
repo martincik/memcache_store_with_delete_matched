@@ -1,0 +1,14 @@
+MemCache Store with delete_matched
+================
+Author: Ladislav Martincik (ladislav.martincik@gmail.com)
+
+= Description
+If you're using default Memcache store provided by Rails (2.1) you're probably missing delete_matched() method used by expire_fragment() to clear cache with Regex. This plugin is implementation of this delete_matched(). It's not memcache implementation but simple Ruby code to provide this functionality. 
+
+= Installation with Rails >2.1
+script/plugin install git://github.com/lacomartincik/memcache-store-with-delete_matched.git
+
+= Requirements
+  - Memcache
+  - memcache-client gem
+  - rspec for running tests

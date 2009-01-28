@@ -1,0 +1,1 @@
+require 'mem_cache_store_with_delete_matched'
